@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL Color Changer</title>
+    <style>
+        body {
+            text-align: center; /* Center content */
+            margin-top: 50px;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto; /* Center the canvas */
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="glCanvas" width="640" height="480"></canvas>
+    <br>
+    <button onclick="changeColor(1)">Red</button>
+    <button onclick="changeColor(2)">Green</button>
+    <button onclick="changeColor(3)">Blue</button>
+    <button onclick="resetColor()">Reset</button>
+    
+    <script src="app.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
